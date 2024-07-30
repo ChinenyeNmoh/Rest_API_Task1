@@ -22,7 +22,7 @@ To get started with this project, follow the steps below:
 
 1. Clone the repository.
    ```sh
-   git clone https://github.com/ChinenyeNmoh/dynamicShop.git
+   git clone https://github.com/ChinenyeNmoh/Rest_API_Task1.git
    ```
 2. Install the required packages.
 	```sh
@@ -44,18 +44,18 @@ To get started with this project, follow the steps below:
 
 - Description: Fetches users within a 10-kilometer radius of the provided latitude and longitude. Results are sorted by proximity and can be paginated.
 - Query Parameters:
-lat: Latitude of the center point.
-lon: Longitude of the center point.
-page: Page number for pagination (default is 1).
+1) lat: Latitude of the center point.
+2) lon: Longitude of the center point.
+3) page: Page number for pagination (default is 1).
 Response: JSON object containing users within the specified radius, sorted by distance, along with pagination metadata.
 
 ### POST /users
 
 - Description: Creates a new user record with specified name, latitude, and longitude.
 -Request Body:
-name: User's name.
-latitude: User's latitude.
-longitude: User's longitude.
+1) name: User's name.
+2) latitude: User's latitude.
+3) longitude: User's longitude.
 Response: JSON object containing the created user data and a success message.
 
 ### Contributing
