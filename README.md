@@ -47,7 +47,7 @@ To get started with this project, follow the steps below:
 1) lat: Latitude of the center point.
 2) lon: Longitude of the center point.
 3) page: Page number for pagination (default is 1).
-Response: JSON object containing users within the specified radius, sorted by distance, along with pagination metadata.
+- Response: JSON object containing users within the specified radius, sorted by distance, along with pagination metadata.
 
 ### POST /users
 
@@ -56,13 +56,8 @@ Response: JSON object containing users within the specified radius, sorted by di
 1) name: User's name.
 2) latitude: User's latitude.
 3) longitude: User's longitude.
-Response: JSON object containing the created user data and a success message.
+- Response: JSON object containing the created user data and a success message.
 
-### Contributing
-We welcome contributions from the community. If you have suggestions to make this project better, please create a pull request or open an issue with the "enhancement" tag. Don't forget to star the project if you find it useful!
-
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Author
 - Chinenye Nmoh [Github](https://github.com/ChinenyeNmoh/) / [Linkedin](https://www.linkedin.com/in/chinenye-nmoh-88479699/) / [Email](chinenyeumeaku@gmail.com) 
