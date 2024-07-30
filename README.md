@@ -40,7 +40,7 @@ To get started with this project, follow the steps below:
    ```
 
 # End points
- ### GET /users
+ ### GET /users/?lat=<your lat>&lon=<your lon>
 
 - Description: Fetches users within a 10-kilometer radius of the provided latitude and longitude. Results are sorted by proximity and can be paginated.
 - Query Parameters:
