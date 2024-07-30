@@ -22,7 +22,7 @@ To get started with this project, follow the steps below:
 
 1. Clone the repository.
    ```sh
-   git clone https://github.com/ChinenyeNmoh/Rest_API_Task1.git
+   git clone https://github.com/ChinenyeNmoh/Task.git
    ```
 2. Install the required packages.
 	```sh
