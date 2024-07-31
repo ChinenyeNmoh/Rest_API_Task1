@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import {  useGetUsersQuery, useDeletePostMutation, useUpdatePostMutation } from '../slices/postApiSlice';
 import Loader from '../components/Loader';
@@ -8,7 +8,7 @@ import { FaMapMarker, FaEdit, FaPhone, FaArrowLeft } from "react-icons/fa";
 import { MdEmail, MdDelete } from "react-icons/md";
 import { removePost, updatePost as updatePostAction } from '../slices/postSlice';
 import { useSelector, useDispatch } from 'react-redux';
-
+import Meta from '../components/Meta';
 const FullPost = () => {
   const { id } = useParams();
   const navigate = useNavigate();

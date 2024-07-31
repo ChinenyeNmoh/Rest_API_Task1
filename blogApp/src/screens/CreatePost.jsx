@@ -6,7 +6,7 @@ import { Form, Button, Card, Container, Row, Col } from 'react-bootstrap';
 import { newPost } from '../slices/postSlice';
 import Loader from '../components/Loader';
 import { useDispatch} from 'react-redux';
-import {Meta} from '../components/Meta';
+import Meta from '../components/Meta';
 
 const CreatePost = () => {
   const [title, setTitle] = useState(''); //set state for every field in the form
