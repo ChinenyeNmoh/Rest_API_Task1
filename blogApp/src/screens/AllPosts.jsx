@@ -4,7 +4,7 @@ import PostList from '../components/PostList'
 const AllPosts = () => {
   return (
     <div>
-        <PostList all={true}/>
+        <PostList />
     </div>
   )
 }

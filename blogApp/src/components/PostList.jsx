@@ -12,11 +12,13 @@ import { addToPosts } from '../slices/postSlice';
 import { useDispatch, useSelector } from 'react-redux';
 
 const PostList = ({ isHome = false }) => {
-    const [page, setPage] = useState(1);
-    const limit = 12;
-    const { data: posts, isLoading, error } = useGetPostsQuery();
     const dispatch = useDispatch();
     const location = useLocation();
+    const [page, setPage] = useState(1);
+    const limit = 12;
+    //make a request to the API to get the posts
+    const { data: posts, isLoading, error } = useGetPostsQuery();
+    
     // Get the search keyword from the URL
     const query = new URLSearchParams(location.search);
     const keyword = query.get('keyword');
@@ -27,6 +29,7 @@ const PostList = ({ isHome = false }) => {
         }
     }, [error]);
 
+//lets fetch our posts from local storage
     const { postItems } = useSelector((state) => state.post);
 
     // Fetch and add new posts to the Redux store when the initial data is loaded or updated
@@ -36,6 +39,7 @@ const PostList = ({ isHome = false }) => {
         }
     }, [dispatch, posts]);
 
+    // Handle page changes for pagination
     const handlePageChange = (pageNumber) => {
         setPage(pageNumber);
     };
