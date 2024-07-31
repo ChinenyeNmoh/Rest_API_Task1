@@ -6,6 +6,7 @@ import { Form, Button, Card, Container, Row, Col } from 'react-bootstrap';
 import { newPost } from '../slices/postSlice';
 import Loader from '../components/Loader';
 import { useDispatch} from 'react-redux';
+import {Meta} from '../components/Meta';
 
 const CreatePost = () => {
   const [title, setTitle] = useState(''); //set state for every field in the form
@@ -31,6 +32,7 @@ const CreatePost = () => {
 
   return (
     <>
+    <Meta title="Create post" />
       {isLoading  && <Loader />}
         <h2 className="text-center mt-3">Add Post</h2>
         <Container>

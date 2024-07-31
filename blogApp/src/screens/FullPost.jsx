@@ -79,6 +79,7 @@ const FullPost = () => {
 
   return (
     <div>
+      <Meta title={post.title} description={post.body} />
       <Link to='/all' className='btn btn-light rounded my-3'>
         <FaArrowLeft /> Go Back
       </Link>
