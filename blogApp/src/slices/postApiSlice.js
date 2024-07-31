@@ -4,11 +4,9 @@ export const postSlice = apiSlice.injectEndpoints({
     endpoints: (builder) => ({
         getPosts: builder.query({
             query: () => {
-                // Construct URL based on conditions
                 return `/posts?_sort=id&_order=desc`;
             },
             keepUnusedDataFor: 5,
-            providesTags: ["Post"],
         }),
         getUsers: builder.query({
             query: () => "/users",
@@ -23,7 +21,7 @@ export const postSlice = apiSlice.injectEndpoints({
                 method: "POST",
                 body: post,
             }),
-            invalidatesTags: ["Post"],
+            
         }),
         updatePost: builder.mutation({
             query: ({id, ...post}) => ({
@@ -31,7 +29,6 @@ export const postSlice = apiSlice.injectEndpoints({
                 method: "PUT",
                 body: post,
             }),
-            invalidatesTags: ["Post"],
         }),
         deletePost: builder.mutation({
             query: (id) => ({
