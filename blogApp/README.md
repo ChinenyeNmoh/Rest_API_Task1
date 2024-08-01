@@ -1,4 +1,4 @@
-# dynamikShop
+# dynamikBlog
 
 ![Homepage](dynamikblog.png)
 
