@@ -2,6 +2,7 @@ import { configureStore } from '@reduxjs/toolkit';
 import { apiSlice } from './slices/apiSlice';
 import postSliceReducer from './slices/postSlice';
 
+// Create a Redux store with our reducers and middleware
 const store = configureStore({
   reducer: {
     [apiSlice.reducerPath]: apiSlice.reducer,

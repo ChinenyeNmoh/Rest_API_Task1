@@ -4,6 +4,7 @@ import {Container} from 'react-bootstrap'
 import 'react-toastify/dist/ReactToastify.css'; // Import the styles
 import Header from "../components/Header";
 
+// Base Component for all other screens. Contains Header, ToastContainer, and main content.
 const Base = () => {
     return (
         <>

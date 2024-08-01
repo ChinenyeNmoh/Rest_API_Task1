@@ -1,5 +1,6 @@
 import { apiSlice } from "./apiSlice";
 
+// this will make api calls to the jsonplaceholder API
 export const postSlice = apiSlice.injectEndpoints({
     endpoints: (builder) => ({
         getPosts: builder.query({

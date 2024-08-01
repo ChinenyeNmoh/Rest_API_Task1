@@ -9,6 +9,9 @@ import { MdEmail, MdDelete } from "react-icons/md";
 import { removePost, updatePost as updatePostAction } from '../slices/postSlice';
 import { useSelector, useDispatch } from 'react-redux';
 import Meta from '../components/Meta';
+
+
+
 const FullPost = () => {
   const { id } = useParams();
   const navigate = useNavigate();
