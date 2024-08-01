@@ -31,8 +31,6 @@ To get started with this project, follow the steps below:
 	```sh
 	npm install package.json
 	```
-    run this in both the backend and the frontend folder
-
 
 ### Start the application for development.
    ```sh
