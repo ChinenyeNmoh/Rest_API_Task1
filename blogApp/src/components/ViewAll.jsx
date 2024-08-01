@@ -5,7 +5,7 @@ const ViewAll = () => {
   return (
     <section className="d-flex justify-content-center mt-3">
         <Link to="/all" className="bg-dark text-white text-center p-2 px-6 rounded text-decoration-none">
-          View All Jobs
+          View All Posts
         </Link>
     </section>
   );
